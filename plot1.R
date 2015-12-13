@@ -1,6 +1,6 @@
 # PLOT 1
 
-##Read data set
+##Read data set from working directory
 
 DT <- read.table("./household_power_consumption.txt", sep = ";", header = TRUE, na.strings = "?",
                  colClasses = c(rep("factor", 2), rep("numeric", 7)))
