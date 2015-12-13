@@ -13,7 +13,7 @@ subDT <- subset(DT, DT$Date == "1/2/2007" | DT$Date == "2/2/2007")
 
 subDT$datime <- with(subDT,  strptime(paste(Date, Time), format = "%d/%m/%Y %T"))
 
-# Make a plot and save it as png file
+## Make a plot and save it as png file
 
 png("plot2.png", width = 480, height = 480)
 with(subDT, plot(datime, Global_active_power, type = "l", xlab = "", ylab = "Global Active Power (kilowatts)"))
